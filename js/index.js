@@ -45,9 +45,9 @@ function gameEngine(){
         gameOverSound.play();
         musicSound.pause();
         inputDir =  {x: 0, y: 0}; 
-        alert("Game Over.Hari is died of excessive drinking ... Press enter key to revive hari  again!");
+        alert("Game Over.Press Enter to play   again!");
         snakeArr = [{x: 13, y: 15}];
-        // musicSound.play();
+        musicSound.play();
         score = 0; 
     }
 
@@ -103,7 +103,7 @@ function gameEngine(){
 
 
 // Main logic starts here
-// musicSound.play();
+musicSound.play();
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore === null){
     hiscoreval = 0;
